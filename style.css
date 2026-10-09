@@ -58,6 +58,9 @@ nav a:hover, nav a[aria-current="page"] { color: var(--fg); }
 h1 { font: 600 26px/1.35 var(--mono); letter-spacing: -.01em; margin: 0 0 6px; }
 h2 { font: 600 17px/1.4 var(--mono); margin: 34px 0 8px; }
 h2::before { content: "¶ "; color: var(--accent); font-weight: 400; }
+/* 한국어 제목은 고정폭 글꼴의 넓은 띄어쓰기를 피해 시스템 글꼴로, 영어 제목만 타자기 느낌의 고정폭 */
+:lang(ko) h1, :lang(ko) h2 { font-family: var(--sans); letter-spacing: -.01em; }
+:lang(en) h1, :lang(en) h2 { font-family: var(--mono); }
 h3 { font: 600 15.5px/1.5 var(--sans); margin: 22px 0 4px; }
 p, ul { margin: 8px 0; }
 ul { padding-left: 1.25em; }
