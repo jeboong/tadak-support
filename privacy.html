@@ -41,8 +41,8 @@ Mac에서는 저장 창에서 직접 고른 위치에만 파일을 써요.</p>
   <li>광고는 <b>보상형 광고 한 가지</b>예요. 프리미엄 테마를 15분 체험하려고 직접 고를 때만 재생돼요. 배너나 전면 광고는 없어요.
   광고를 보지 않아도 쓰기·읽기·내보내기는 모두 쓸 수 있어요.</li>
   <li><b>맞춤형이 아닌 광고</b>만 요청해요. 앱 추적 투명성(ATT) 허락을 묻지 않고, 광고 식별자(IDFA)를 쓰지 않아요.</li>
-  <li>나이를 묻지 않기 때문에 모든 광고 요청을 동의 연령 미만 이용자 기준으로 표시해서 보내요.</li>
-  <li>광고 SDK는 앱이 켜질 때 광고 준비와 동의 확인을 위해 Google과 통신할 수 있어요.
+  <li>나이를 묻지 않기 때문에 모든 광고 요청에 Google의 청소년 보호 기준을 적용하고, 개인 맞춤 광고를 끈 채로 보내요.</li>
+  <li>광고 SDK는 앱을 켜기만 해서는 Google과 통신하지 않아요. 잠긴 프리미엄 테마를 미리 보거나 광고 체험을 고를 때, 광고를 준비하고 동의를 확인하려고 처음 통신해요.
   유럽 경제 지역(EEA)과 영국에서는 Google의 동의 화면(UMP)이 먼저 나올 수 있고, 설정에서 다시 고를 수 있어요.</li>
   <li>광고를 보여 주고 측정하고 부정 사용을 막기 위해 Google이 IP 주소와 그로 짐작한 대략적인 위치,
   광고 식별자(IDFA)가 아닌 기기 식별자, 기기 종류와 OS, 광고 반응, 진단 정보 같은 기기 정보를 처리할 수 있어요.
@@ -109,8 +109,8 @@ On the Mac, files are written only where you choose in the save panel.</p>
   <li>There is <b>one kind of ad: a rewarded ad</b> that plays only when you choose it to try a premium theme for 15 minutes.
   No banners, no interstitials. Writing, reading and exporting all work without ever watching an ad.</li>
   <li><b>Non-personalized ads only.</b> The app never asks for App Tracking Transparency and does not use the advertising identifier (IDFA).</li>
-  <li>The app does not ask your age, so every ad request is tagged for users under the age of consent.</li>
-  <li>The ad SDK may contact Google when the app starts, to prepare ads and check consent.
+  <li>The app does not ask your age, so every ad request asks for Google's teen protections, with personalized ads turned off.</li>
+  <li>The ad SDK does not contact Google just because you open the app. It first contacts Google, to prepare an ad and check consent, when you preview a locked premium theme or choose an ad trial.
   In the EEA and the UK, Google's consent form (UMP) may appear first, and you can change your choice later in Settings.</li>
   <li>To serve and measure ads and prevent fraud, Google may process device information such as IP address and the coarse
   location derived from it, a device identifier that is not the advertising identifier (IDFA), device model and OS,
